@@ -1,0 +1,84 @@
+.customers-section {
+  background: #ffe550;
+}
+
+.customers-heading {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  color: #2c2c2c;
+  padding-top: 140px;
+}
+
+.customers-description {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #2c2c2c;
+  padding-top: 20px;
+}
+
+.container {
+  padding: 0 16px;
+  margin: 0 auto;
+  width: 1280px;
+}
+
+.dude-box {
+  width: 473px;
+
+  background-color: #fff;
+  margin-bottom: 126px;
+  margin-top: 32px;
+  border-radius: 0 20px 20px 20px;
+}
+
+.dude-list {
+  display: flex;
+  gap: 140px;
+}
+
+img {
+  padding-left: 14px;
+  padding-top: 14.36px;
+}
+
+.dude-comment {
+  font-weight: 700;
+  font-size: 18px;
+  color: #2c2c2c;
+  padding-top: 28.56px;
+  padding-left: 14.36px;
+}
+
+.dude-name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #2c2c2c;
+}
+
+.some-dude {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #2c2c2c;
+}
+
+.dude-card {
+  display: ;
+  margin-top: 40.8px;
+  padding-bottom: 14.28px;
+}
+
+.dude-container {
+  width: 94px;
+  height: 52px;
+}
+
+.whatever {
+  border: 1px solid #7eb101;
+  width: 52px;
+  height: 0px;
+  transform: rotate(-90deg);
+}
