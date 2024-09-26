@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="./css/fifth-section.css" />
     <link rel="stylesheet" href="./css/footer.css" />
   </head>
-
   <body>
     <header>
       <!-- Moiseiev added header styles-->
@@ -40,6 +39,11 @@
             <li><a href="">Contact</a></li>
           </ul>
         </nav>
+        <button type="button" class="mobile-menu-button">
+          <svg width="28" height="28" class="icon">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
         <button class="navigation-bar-button" type="button">Order Now</button>
       </div>
     </header>
@@ -242,8 +246,33 @@
           </div>
         </div>
       </section>
-
       <!-- Божко Олег -->
     </footer>
+    <div class="mobile-menu-overlay">
+      <div class="mobile-nav-menu-window">
+        <button class="nav-menu-close-button" type="button">
+          <svg width="12" height="12" class="icon">
+            <use href="./images/icons.svg#icon-closex"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu-nav">
+          <li>
+            <a class="mobile-nav-menu-items active" href="./index.html">Home</a>
+          </li>
+          <li>
+            <a class="mobile-nav-menu-items" href="">About</a>
+          </li>
+          <li>
+            <a class="mobile-nav-menu-items" href="">Service</a>
+          </li>
+          <li>
+            <a class="mobile-nav-menu-items" href="">Menu</a>
+          </li>
+          <li>
+            <a class="mobile-nav-menu-items" href="">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
