@@ -137,6 +137,7 @@ header {
   line-height: 1.5;
   color: #2c2c2c;
   text-align: right;
+  border: none;
 }
 .mobile-menu-button:active {
   fill: #ffe550;
