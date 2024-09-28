@@ -18,26 +18,30 @@
     <link rel="stylesheet" href="./css/first-section.css" />
     <link rel="stylesheet" href="./css/second-section.css" />
     <link rel="stylesheet" href="./css/third-section.css" />
-    <link rel="stylesheet" href="./css/forth-section.css" />
-    <link rel="stylesheet" href="./css/five-section.css" />
+    <link rel="stylesheet" href="./css/fourth-section.css" />
+    <link rel="stylesheet" href="./css/fifth-section.css" />
     <link rel="stylesheet" href="./css/footer.css" />
   </head>
+
   <body>
     <header>
-      <!-- Yuriy Nabasov -->
-      <a href="#">
-        <img src="./images/vector.png" alt="logo" />
-      </a>
-      <nav>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Service</a></li>
-          <li><a href="">Menu</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </nav>
-      <button type="button">Order Now</button>
+      <!-- Moiseiev added header styles-->
+      <div class="container">
+        <!-- Yuriy Nabasov -->
+        <a href="#" class="header-logo">
+          <img src="./images/vector.png" alt="logo" />
+        </a>
+        <nav class="navigation-bar">
+          <ul class="navigation-bar-list">
+            <li><a class="active-nav" href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="navigation-bar-button" type="button">Order Now</button>
+      </div>
     </header>
     <main>
       <!-- first section Мария Холод -->
@@ -95,41 +99,163 @@
         <img src="./images/apple.png" width="396" alt="apple" />
       </section>
       <!-- 3 Устим Бордун -->
-      <!-- 4 Marharyta Tandykina -->
       <section>
-        <h2>What our Customers Say</h2>
-        <p>
-          Don't just take our word for it - see what our satisfied customers
-          have to say
-        </p>
-        <ul>
-          <li>
-            <img src="./images/Stars.png" alt="Stars" />
-            <h3>
-              “The Best app I have used to order food in a while, so many
-              options to choose from too, I would recommend to a freind, No
-              questions asked”
-            </h3>
-            <img src="./images/Ellipse 9.png" alt="avatar" />
-            <h4>Sumith Shah</h4>
-            <p>Some Dude</p>
-          </li>
-          <li>
-            <img src="./images/Stars.png" alt="Stars" />
-            <h3>
-              “The ease with which I can just go in and order what i want was
-              amazing, It has been a very pleasant experience ordering from this
-              app”
-            </h3>
-            <img src="./images/Ellipse 10.png" alt="avatar" />
-            <h4>Sumith Shah</h4>
-            <p>Some Dude</p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2>Some of Our Favorites</h2>
+          <p>Looking for something delicious?</p>
+          <ul>
+            <li>
+              <img src="./images/hamburger.png" alt="hamburger" />
+            </li>
+            <li>
+              <img src="./images/pasta.png" alt="pasta" />
+            </li>
+            <li>
+              <img src="./images/pizza.png" alt="pizza" />
+            </li>
+            <li>
+              <img src="./images/chicken.png" alt="chicken" />
+            </li>
+            <li>
+              <img src="./images/salad_2.png" alt="salad_2" />
+            </li>
+            <li>
+              <img src="./images/borsch.png" alt="borsch" />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- 4 Marharyta Tandykina -->
+      <!-- Nastia Chorna added styles to section 4-->
+
+      <section class="customers-section">
+        <div class="container">
+          <h2 class="customers-heading">What our Customers Say</h2>
+          <p class="customers-description">
+            Don't just take our word for it - see what our satisfied customers
+            have to say
+          </p>
+          <ul class="dude-list">
+            <li class="dude-box">
+              <img src="./images/Stars.png" alt="Stars" />
+              <p class="dude-comment">
+                “The Best app I have used to order food in a while, so many
+                options to choose from too, I would recommend to a freind, No
+                questions asked”
+              </p>
+              <div class="dude-card">
+                <img src="./images/Ellipse 9.png" alt="avatar" />
+                <div class="dude-container">
+                  <p class="dude-name">Sumith Shah</p>
+                  <p class="some-dude">Some Dude</p>
+                  <p class="whatever">|</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="dude-box">
+              <img src="./images/Stars.png" alt="Stars" />
+              <p class="dude-comment">
+                “The ease with which I can just go in and order what I want was
+                amazing, It has been a very pleasant experience ordering from
+                this app”
+              </p>
+              <div class="dude-card">
+                <img src="./images/Ellipse 10.png" alt="avatar" />
+                <div class="dude-container">
+                  <p class="dude-name">Sumith Shah</p>
+                  <p class="some-dude">Some Dude</p>
+                  <p class="whatever">|</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- 5 Виталий Зайденшнир-->
+      <!-- Maksym added styles to section 5-->
+      <section class="subsctibe-section">
+        <div class="container fifth-section">
+          <div class="subsctibe-block">
+            <h2 class="subsctibe-title">Subscribe To Get Special Offers</h2>
+            <p class="subsctibe-text">
+              Order now and receive 10% off your first meal with Enjoy Your
+              Favorite Food From Anywhere.
+            </p>
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              class="subscribe-input"
+            />
+            <button type="button" class="subscribe-btn">Subscribe</button>
+          </div>
+          <img src="./images/banan.png" width="608" alt="Banan" />
+        </div>
+      </section>
     </main>
+    <!-- Yurii Nabasov added styles to footer-->
     <footer>
+      <section class="footer-section">
+        <div class="container footer-box">
+          <div class="footer-first-wrapper">
+            <nav class="footer-navigation-bar">
+              <a href="#" class="footer-logo">
+                <img
+                  class="footer-logo-img"
+                  src="./images/vector.png"
+                  alt="logo"
+              /></a>
+              <ul class="footer-navigation-bar-list">
+                <li><a class="footer-navigation-bar-item" href="">Home</a></li>
+                <li><a class="footer-navigation-bar-item" href="">About</a></li>
+                <li>
+                  <a class="footer-navigation-bar-item" href="">Service</a>
+                </li>
+                <li><a class="footer-navigation-bar-item" href="">Menu</a></li>
+                <li>
+                  <a class="footer-navigation-bar-item" href="">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="footer-additional-bar-list">
+              <li>
+                <a class="footer-additional-bar-item" href="">Privacy Policy</a>
+              </li>
+              <li>
+                <a class="footer-additional-bar-item" href=""
+                  >Terms of Service</a
+                >
+              </li>
+              <li>
+                <a class="footer-additional-bar-item" href=""
+                  >Cookies Settings</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-second-wrapper">
+            <form class="footer-form">
+              <label class="footer-form-label" for="email">Subscribe</label>
+              <input
+                class="footer-form-input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+              <button class="footer-form-btn" type="submit">Subscribe</button>
+            </form>
+            <p class="footer-policy">
+              By subscribing you agree to with our
+              <span class="footer-policy-link">Privacy Policy</span>
+            </p>
+            <p class="footer-text">2022 FoodSta. All right reserved.</p>
+          </div>
+        </div>
+      </section>
+
       <!-- Божко Олег -->
     </footer>
   </body>

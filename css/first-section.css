@@ -1,10 +1,15 @@
 
+.first-section {
+    width: 1248px;
+    height: auto;
+    margin: 0 auto;
+}
 
 .container-first-section {
     display: flex;
     flex-direction: row;
-    gap: 143px;
     align-items: center;
+    justify-content: space-between;
 }
 
 .first-section-flex-first {
@@ -13,10 +18,10 @@
 
 .first-section-img {
     border: 26px solid #ffe550;;
-    border-radius: 291px;
+    border-radius: 100%;
     width: 528px;
     height: 528px;
- 
+    margin: 14px 14px 0px 143px;
 }
 
 .first-section {
@@ -60,3 +65,7 @@
     text-wrap: nowrap;
 }
 
+.first-section-button:hover,
+.first-section-button:focus {
+    background: #ffe450;
+}
