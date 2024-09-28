@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/fourth-section.css" />
     <link rel="stylesheet" href="./css/fifth-section.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
   </head>
   <body>
     <header>
@@ -261,6 +262,52 @@
       </section>
       <!-- Божко Олег -->
     </footer>
+    <div class="modal-backdrop">
+      <div class="modal">
+        <button class="modal-close">
+          <svg class="modal-close-icon" width="11" height="11">
+            <use href="./images/symbol-defs.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+        <p class="modal-titel">order form</p>
+        <form class="modal-field">
+          <div class="modal-field-input-wrapper">
+            <label class="modal-input-label" for="modal-input-username"
+              >Name</label
+            >
+            <input
+              class="modal-input"
+              id="modal-input-username"
+              type="text"
+              placeholder="Your name"
+            />
+          </div>
+          <div class="modal-field-input-wrapper">
+            <label class="modal-input-label" for="modal-input-tel"
+              >Phone number</label
+            >
+            <input
+              class="modal-input"
+              id="modal-input-tel"
+              type="tel"
+              placeholder="+38(0_ _) _ _ _   _ _   _ _"
+            />
+          </div>
+          <div class="modal-field-input-wrapper">
+            <label class="modal-input-label" for="modal-input-email"
+              >E-mail</label
+            >
+            <input
+              class="modal-input"
+              id="modal-input-email"
+              type="email"
+              placeholder="example@gmail.com"
+            />
+          </div>
+          <button class="modal-btn-send" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
     <div class="mobile-menu-overlay">
       <div class="mobile-nav-menu-window">
         <button class="nav-menu-close-button" type="button">
