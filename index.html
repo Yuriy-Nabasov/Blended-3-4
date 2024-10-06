@@ -40,7 +40,7 @@
             <li><a href="">Contact</a></li>
           </ul>
         </nav>
-        <button type="button" class="mobile-menu-button">
+        <button class="mobile-menu-button" type="button">
           <svg width="28" height="28" class="icon">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
@@ -60,7 +60,7 @@
               enjoy a hassle-free and delicious meal from the comfort of your
               own home.
             </p>
-            <button class="first-section-button" type="button">
+            <button class="first-section-button" type="button" data-modal-open>
               Order Now
             </button>
           </div>
@@ -262,9 +262,10 @@
       </section>
       <!-- Божко Олег -->
     </footer>
-    <div class="modal-backdrop">
+    <!-- BACKDROP -->
+    <div class="modal-backdrop" data-modal>
       <div class="modal">
-        <button class="modal-close">
+        <button class="modal-close" type="button" data-modal-close>
           <svg class="modal-close-icon" width="11" height="11">
             <use href="./images/symbol-defs.svg#icon-close-btn"></use>
           </svg>
@@ -308,6 +309,8 @@
         </form>
       </div>
     </div>
+    <!-- /BACKDROP -->
+    <!-- MOBILE-MENU -->
     <div class="mobile-menu-overlay">
       <div class="mobile-nav-menu-window">
         <button class="nav-menu-close-button" type="button">
@@ -334,5 +337,10 @@
         </ul>
       </div>
     </div>
+    <!-- /MOBILE-MENU -->
+    <!-- CONECT-JS -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+    <!-- /CONECT-JS -->
   </body>
 </html>
