@@ -4,16 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FoodSta</title>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/first-section.css" />
     <link rel="stylesheet" href="./css/second-section.css" />
@@ -24,10 +27,10 @@
     <link rel="stylesheet" href="./css/modal.css" />
   </head>
   <body>
+    <!-- Moiseiev added header styles-->
+    <!-- Yuriy Nabasov -->
     <header>
-      <!-- Moiseiev added header styles-->
       <div class="container">
-        <!-- Yuriy Nabasov -->
         <a href="#" class="header-logo">
           <img src="./images/vector.png" alt="logo" />
         </a>
@@ -48,6 +51,7 @@
         <button class="navigation-bar-button" type="button">Order Now</button>
       </div>
     </header>
+
     <main>
       <!-- first section Мария Холод -->
       <section class="first-section">
@@ -103,36 +107,196 @@
         <button type="button">Order Now</button>
         <img src="./images/apple.png" width="396" alt="apple" />
       </section>
+
       <!-- 3 Устим Бордун -->
-      <section>
-        <div class="container">
-          <h2>Some of Our Favorites</h2>
-          <p>Looking for something delicious?</p>
-          <ul>
-            <li>
-              <img src="./images/hamburger.png" alt="hamburger" />
+      <section class="sec-favorites">
+        <div class="container-favorites">
+          <h2 class="sec-favorites-title">Some of Our Favorites</h2>
+          <p class="sec-favorites-text">Looking for something delicious?</p>
+          <ul class="sec-favorites-list">
+            <li class="sec-favorites-item">
+              <a class="sec-favorites-link" href="">
+                <picture class="sec-favorites-picture">
+                  <source
+                    srcset="
+                      ./images/sec-favorites/desktop/desktop-gamburger.png    1x,
+                      ./images/sec-favorites/desktop/desktop-gamburger@2x.png 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/sec-favorites/tablet/tablet-gamburger.png    1x,
+                      ./images/sec-favorites/tablet/tablet-gamburger@2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/sec-favorites/mobile/mobile-gamburger.png    1x,
+                      ./images/sec-favorites/mobile/mobile-gamburger@2x.png 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+
+                  <img
+                    class="sec-favorites-img"
+                    src="./images/sec-favorites/mobile/mobile-gamburger.png"
+                    alt="hamburger"
+                  />
+                </picture>
+              </a>
             </li>
-            <li>
-              <img src="./images/pasta.png" alt="pasta" />
+            <li class="sec-favorites-item">
+              <a class="sec-favorites-link" href="">
+                <picture class="sec-favorites-picture">
+                  <source
+                    srcset="
+                      ./images/sec-favorites/desktop/desktop-pasta.png    1x,
+                      ./images/sec-favorites/desktop/desktop-pasta@2x.png 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/sec-favorites/tablet/tablet-pasta.png    1x,
+                      ./images/sec-favorites/tablet/tablet-pasta@2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/sec-favorites/mobile/mobile-pasta.png    1x,
+                      ./images/sec-favorites/mobile/mobile-pasta@2x.png 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+
+                  <img
+                    class="sec-favorites-img"
+                    src="./images/sec-favorites/mobile/mobile-pasta.png"
+                    alt="pasta"
+                  />
+                </picture>
+              </a>
             </li>
-            <li>
-              <img src="./images/pizza.png" alt="pizza" />
+            <li class="sec-favorites-item">
+              <a class="sec-favorites-link" href="">
+                <picture class="sec-favorites-picture">
+                  <source
+                    srcset="
+                      ./images/sec-favorites/desktop/desktop-pizza.png    1x,
+                      ./images/sec-favorites/desktop/desktop-pizza@2x.png 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/sec-favorites/tablet/tablet-pizza.png    1x,
+                      ./images/sec-favorites/tablet/tablet-pizza@2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/sec-favorites/mobile/mobile-pizza.png    1x,
+                      ./images/sec-favorites/mobile/mobile-pizza@2x.png 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+
+                  <img
+                    class="sec-favorites-img"
+                    src="./images/sec-favorites/mobile/mobile-pizza.png"
+                    alt="pizza"
+                  />
+                </picture>
+              </a>
             </li>
-            <li>
-              <img src="./images/chicken.png" alt="chicken" />
+            <li class="sec-favorites-item">
+              <a class="sec-favorites-link" href="">
+                <picture class="sec-favorites-picture">
+                  <source
+                    srcset="
+                      ./images/sec-favorites/desktop/desktop-chicken.png    1x,
+                      ./images/sec-favorites/desktop/desktop-chicken@2x.png 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/sec-favorites/tablet/tablet-chicken.png    1x,
+                      ./images/sec-favorites/tablet/tablet-chicken@2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <img
+                    class="sec-favorites-img"
+                    src="./images/sec-favorites/tablet/tablet-chicken.png"
+                    alt="chicken"
+                  />
+                </picture>
+              </a>
             </li>
-            <li>
-              <img src="./images/salad_2.png" alt="salad_2" />
+            <li class="sec-favorites-item">
+              <a class="sec-favorites-link" href="">
+                <picture class="sec-favorites-picture">
+                  <source
+                    srcset="
+                      ./images/sec-favorites/desktop/desktop-salad.png    1x,
+                      ./images/sec-favorites/desktop/desktop-salad@2x.png 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/sec-favorites/tablet/tablet-salad.png    1x,
+                      ./images/sec-favorites/tablet/tablet-salad@2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <img
+                    class="sec-favorites-img"
+                    src="./images/sec-favorites/tablet/tablet-salad.png"
+                    alt="salad_2"
+                  />
+                </picture>
+              </a>
             </li>
-            <li>
-              <img src="./images/borsch.png" alt="borsch" />
+            <li class="sec-favorites-item">
+              <a class="sec-favorites-link" href="">
+                <picture class="sec-favorites-picture">
+                  <source
+                    srcset="
+                      ./images/sec-favorites/desktop/desktop-borshch.png    1x,
+                      ./images/sec-favorites/desktop/desktop-borshch@2x.png 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/sec-favorites/tablet/tablet-borshch.png    1x,
+                      ./images/sec-favorites/tablet/tablet-borshch@2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <img
+                    class="sec-favorites-img"
+                    src="./images/sec-favorites/tablet/tablet-borshch.png"
+                    alt="borsch"
+                  />
+                </picture>
+              </a>
             </li>
           </ul>
         </div>
       </section>
+
       <!-- 4 Marharyta Tandykina -->
       <!-- Nastia Chorna added styles to section 4-->
-
       <section class="customers-section">
         <div class="container">
           <h2 class="customers-heading">What our Customers Say</h2>
@@ -177,6 +341,7 @@
           </ul>
         </div>
       </section>
+
       <!-- 5 Виталий Зайденшнир-->
       <!-- Maksym added styles to section 5-->
       <section class="subsctibe-section">
@@ -199,7 +364,9 @@
         </div>
       </section>
     </main>
+
     <!-- Yurii Nabasov added styles to footer-->
+    <!-- Божко Олег -->
     <footer>
       <section class="footer-section">
         <div class="container footer-box">
@@ -260,14 +427,16 @@
           </div>
         </div>
       </section>
-      <!-- Божко Олег -->
     </footer>
+
+    <!-- Modal -->
+    <!-- Устим Бордун -->
     <!-- BACKDROP -->
     <div class="modal-backdrop" data-modal>
       <div class="modal">
         <button class="modal-close" type="button" data-modal-close>
           <svg class="modal-close-icon" width="11" height="11">
-            <use href="./images/symbol-defs.svg#icon-close-btn"></use>
+            <use href="./images/sprite.svg#icon-close-btn"></use>
           </svg>
         </button>
         <p class="modal-titel">order form</p>
@@ -281,6 +450,7 @@
               id="modal-input-username"
               type="text"
               placeholder="Your name"
+              required
             />
           </div>
           <div class="modal-field-input-wrapper">
@@ -292,6 +462,7 @@
               id="modal-input-tel"
               type="tel"
               placeholder="+38(0_ _) _ _ _   _ _   _ _"
+              required
             />
           </div>
           <div class="modal-field-input-wrapper">
@@ -303,12 +474,14 @@
               id="modal-input-email"
               type="email"
               placeholder="example@gmail.com"
+              required
             />
           </div>
           <button class="modal-btn-send" type="submit">Send</button>
         </form>
       </div>
     </div>
+    <!-- /MODAL BACKDROP -->
     <!-- /BACKDROP -->
     <!-- MOBILE-MENU -->
     <div class="mobile-menu-overlay">
@@ -337,7 +510,12 @@
         </ul>
       </div>
     </div>
+
+
     <!-- /MOBILE-MENU -->
+
+    <!-- /MOBILE-MENU -->
+
     <!-- CONECT-JS -->
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>

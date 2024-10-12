@@ -1,0 +1,164 @@
+/* ==================== COMMON STYLES ==================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fefefe;
+}
+
+/* ==================== /COMMON STYLES ==================== */
+
+/* ==================== SECTION FAVORITES ==================== */
+.sec-favorites {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.container-favorites {
+  max-width: 320px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sec-favorites-title {
+  margin-bottom: 20px;
+
+  font-size: 28px;
+  text-align: center;
+  color: #2c2c2c;
+}
+
+.sec-favorites-text {
+  margin-bottom: 60px;
+
+  font-size: 14px;
+  text-align: center;
+  color: #2c2c2c;
+}
+
+.sec-favorites-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .sec-favorites-item:nth-child(n + 4) {
+    display: none;
+  }
+}
+
+.sec-favorites-item {
+  min-width: 100%;
+}
+
+.sec-favorites-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 282px;
+
+  border: 11px solid #ffe550;
+  border-radius: 50%;
+
+  transition: border-color 250ms ease-in-out;
+}
+
+.sec-favorites-link:hover,
+.sec-favorites-link:focus {
+  border-color: #bbf330;
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .sec-favorites {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .container-favorites {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .sec-favorites-title {
+    font-size: 42px;
+  }
+
+  .sec-favorites-text {
+    font-size: 16px;
+  }
+
+  .sec-favorites-list {
+    gap: 32px;
+  }
+
+  .sec-favorites-item {
+    min-width: calc((100% - 32px) / 2);
+  }
+
+  .sec-favorites-link {
+    min-height: 338px;
+
+    border-width: 14px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .sec-favorites {
+    padding-top: 120px;
+    padding-bottom: 101px;
+  }
+
+  .container-favorites {
+    max-width: 1280px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .sec-favorites-item {
+    min-width: calc((100% - 64px) / 3);
+  }
+
+  .sec-favorites-link {
+    min-height: 397px;
+
+    border-width: 16px;
+  }
+}
+/* ==================== /SECTION FAVORITES ==================== */
