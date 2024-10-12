@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/fourth-section.css" />
     <link rel="stylesheet" href="./css/fifth-section.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
   </head>
   <body>
     <header>
@@ -39,7 +40,7 @@
             <li><a href="">Contact</a></li>
           </ul>
         </nav>
-        <button type="button" class="mobile-menu-button">
+        <button class="mobile-menu-button" type="button">
           <svg width="28" height="28" class="icon">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
@@ -49,16 +50,29 @@
     </header>
     <main>
       <!-- first section Мария Холод -->
-      <section>
-        <h1>Enjoy Your Favorite Food From Anywhere</h1>
-        <p>
-          With just a few clicks, you can have your favorite meals delivered
-          straight to your doorstep, no matter where you are. Order now and
-          enjoy a hassle-free and delicious meal from the comfort of your own
-          home.
-        </p>
-        <button type="button">Order Now</button>
-        <img src="./images/salad.png" alt="salad" width="528" />
+      <section class="first-section">
+        <div class="container-first-section">
+          <div class="first-section-flex-first">
+            <h1 class="main-title">Enjoy Your Favorite Food From Anywhere</h1>
+            <p class="first-section-text">
+              With just a few clicks, you can have your favorite meals delivered
+              straight to your doorstep, no matter where you are. Order now and
+              enjoy a hassle-free and delicious meal from the comfort of your
+              own home.
+            </p>
+            <button class="first-section-button" type="button" data-modal-open>
+              Order Now
+            </button>
+          </div>
+          <div class="frame">
+            <img
+              class="first-section-img"
+              src="./images/salad.png"
+              alt="salad"
+              width="528"
+            />
+          </div>
+        </div>
       </section>
 
       <!-- second section Бабаєв Емиль -->
@@ -248,6 +262,55 @@
       </section>
       <!-- Божко Олег -->
     </footer>
+    <!-- BACKDROP -->
+    <div class="modal-backdrop" data-modal>
+      <div class="modal">
+        <button class="modal-close" type="button" data-modal-close>
+          <svg class="modal-close-icon" width="11" height="11">
+            <use href="./images/symbol-defs.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+        <p class="modal-titel">order form</p>
+        <form class="modal-field">
+          <div class="modal-field-input-wrapper">
+            <label class="modal-input-label" for="modal-input-username"
+              >Name</label
+            >
+            <input
+              class="modal-input"
+              id="modal-input-username"
+              type="text"
+              placeholder="Your name"
+            />
+          </div>
+          <div class="modal-field-input-wrapper">
+            <label class="modal-input-label" for="modal-input-tel"
+              >Phone number</label
+            >
+            <input
+              class="modal-input"
+              id="modal-input-tel"
+              type="tel"
+              placeholder="+38(0_ _) _ _ _   _ _   _ _"
+            />
+          </div>
+          <div class="modal-field-input-wrapper">
+            <label class="modal-input-label" for="modal-input-email"
+              >E-mail</label
+            >
+            <input
+              class="modal-input"
+              id="modal-input-email"
+              type="email"
+              placeholder="example@gmail.com"
+            />
+          </div>
+          <button class="modal-btn-send" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <!-- /BACKDROP -->
+    <!-- MOBILE-MENU -->
     <div class="mobile-menu-overlay">
       <div class="mobile-nav-menu-window">
         <button class="nav-menu-close-button" type="button">
@@ -274,5 +337,10 @@
         </ul>
       </div>
     </div>
+    <!-- /MOBILE-MENU -->
+    <!-- CONECT-JS -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+    <!-- /CONECT-JS -->
   </body>
 </html>
